@@ -3,11 +3,15 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import chromedriver_autoinstaller
+from pyvirtualdisplay import Display
+
+display = Display(visible=0, size=(800, 800))  
+display.start()
 
 chromedriver_autoinstaller.install()
 
 chrome_options = webdriver.ChromeOptions()
-chrome_options.headless = True;
+chrome_options.add_argument("--window-size=800,800")
 
 driver = webdriver.Chrome(options=chrome_options)
 
