@@ -20,7 +20,7 @@ search.send_keys(Keys.RETURN)
 secondLink = driver.find_element(By.XPATH, "//*[@id='rso']/div//a[1]")
 secondLink.click()
 
-text = driver.find_element(By.XPATH, "//*[@class="content-pair-text"]/h1")
+text = driver.find_element(By.XPATH, "//*[@class='content-pair-text']/h1")
 if(text.text.find("The easy way to manage hard work")):
     print("Text successfully found")
 else:
