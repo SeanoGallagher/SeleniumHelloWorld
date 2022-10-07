@@ -25,7 +25,7 @@ secondLink = driver.find_element(By.XPATH, "//*[@id='rso']/div//a[1]")
 secondLink.click()
 
 headerText = driver.find_element(By.XPATH, "//*[@class='content-pair-text']/h1")
-if(text.text.find("The easy way to manage hard work")):
+if(headerText.text.find("The easy way to manage hard work")):
     print("Text successfully found")
 else:
     print("Text not found")
