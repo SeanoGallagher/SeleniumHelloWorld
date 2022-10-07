@@ -1,8 +1,15 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+import chromedriver_autoinstaller
 
-driver = webdriver.Chrome()
+chromedriver_autoinstaller.install()
+
+chrome_options = webdriver.ChromeOptions()
+chrome_options.headless = True;
+
+driver = webdriver.Chrome(options=chrome_options)
 
 driver.get('http://google.com')
 
