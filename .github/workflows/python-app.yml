@@ -22,4 +22,4 @@ jobs:
         
     - name: Run the script
       run: |
-        python Selenium-Template.py
+        python SeleniumHelloWorld.py
