@@ -1,7 +1,2 @@
 # SeleniumHelloWorld
-
-This project uses python requires selenium and the chrome webdriver.
-
-To install selenium use the "pip install selenium" command in the command prompt.
-
-To install the chrome webdriver go to https://sites.google.com/chromium.org/driver/ annd downnload the latest stable release.
+To check if the correct text is in the header go to the actions tab and run "Check if correct text is in Header". After it is finished running, click on it, click on build, and click on the carrot next to "Run the script". If the correct text is in the header "Text successfully found" should be written in the console. Otherwise "Text not found" will be written in the console.
